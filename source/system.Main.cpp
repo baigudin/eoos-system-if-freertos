@@ -1,6 +1,6 @@
-/** 
- * The main entery point.
- * 
+/**
+ * The main entry point.
+ *
  * @author    Sergey Baigudin, sergey@baigudin.software
  * @copyright 2018, Embedded Team, Sergey Baigudin
  * @license   http://embedded.team/license/
@@ -19,7 +19,7 @@ int main()
         ::local::system::System eoos;
         error = eoos.execute();
     }
-    // Handle unexpected exceptions, following MISRA-C++:2008 Rule 15–3–2
+    // Handle unexpected exceptions following MISRA-C++:2008 Rule 15–3–2
     catch (...)
     {
         error = ::local::ERROR_UNDEFINED;
